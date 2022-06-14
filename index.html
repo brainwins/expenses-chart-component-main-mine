@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/styles.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="./js/data.json"></script>
+  <script src="./js/scripts.js" async></script>
+  <title>Budget Graphs</title>
+</head>
+<body>
+  <div class="card-wrapper">
+    <div class="upper-card">
+      <div class="upper-card-left">
+        <span class="title-text">My balance</span>
+        <span class="main-balance">$921.48</span></div>
+      <div class="upper-card-right">
+        <div class="logo-wrapper">
+          <img src="./images/logo.svg" alt="Logo" class="logo-image">
+        </div>
+      </div>
+    </div>
+    <sectiom class="bottom-card">
+      <span class="bottom-card-title">
+        Spending - Last 7 Days
+      </span>
+      <section class="graph-main-wrapper">
+        <div class="graph-bars">
+          <div class="day">
+            <div class="label">
+              mon
+            </div>
+            <div data-day="1" class="bar"></div>
+            <div class="bar-hover">$55.21</div>
+          </div>
+          <div class="day">
+            <div class="label">
+              tue
+            </div>
+            <div data-day="2" class="bar"></div>
+            <div data-bar-hover="" class="bar-hover">$55.21</div>
+          </div>
+          <div class="day">
+            <div data-bar-hover="" class="bar-hover">$55.21</div>
+            <div data-day="3" class="bar"></div>
+            <div class="label">
+              wed
+            </div>
+          </div>
+          <div class="day">
+            <div data-bar-hover="" class="bar-hover">$55.21</div>
+            <div data-day="4" class="bar"></div>
+            <div class="label">
+              thu
+            </div>
+          </div>
+          <div class="day">
+            <div data-bar-hover="" class="bar-hover">$55.21</div>
+            <div data-day="5" class="bar"></div>
+            <div class="label">
+              fri
+            </div>
+          </div>
+          <div class="day">
+            <div data-bar-hover="" class="bar-hover">$55.21</div>
+            <div data-day="6" class="bar"></div>
+            <div class="label">
+              sat
+            </div>
+          </div>
+          <div class="day">
+            <div data-bar-hover="" class="bar-hover">$55.21</div>
+            <div data-day="0" class="bar"></div>
+            <div class="label">
+              sun
+            </div>
+          </div>
+        </div>
+      </section>
+    <div class="line-break">
+    </div>
+    <section class="bottom-card-bottom">
+      <div class="bottom-card-bottom-left">
+        <div class="bottom-total-title">Total this month</div>
+        <div class="total-this-month-number">$478.33</div>
+      </div>
+      <div class="bottom-card-bottom-right">
+        <div class="percentage-this-month">
+          +2.4%
+        </div>
+        <div class="percentage-title">from last month</div>
+      </div>
+    </section>
+    </sectiom>
+  </div>
+</body>
+</html>
