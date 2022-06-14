@@ -13,8 +13,10 @@ async function renderData() {
     let data = await getData();
     data.forEach((element, i) => {
       const targetbar = document.querySelector(`[data-day="${i}"]`);
-            console.log(targetbar)
+      const targetBarHover = document.querySelector(`[data-bar-hover="${i}"]`);
       targetbar.style.paddingTop = `${element.amount*2.75}px`;
+      targetBarHover.innerHTML = "$" + element.amount;
+
     });
 
 
@@ -26,7 +28,6 @@ renderData();
 //Color today's bar cyan
 const date = new Date();
 const today = date.getDay()
-console.log("Monday is", today)
 const todaysBar = document.querySelector(`[data-day="${today}"]`)
 todaysBar.style.backgroundColor = 'hsl(186, 34%, 60%)';
 
