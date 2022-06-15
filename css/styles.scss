@@ -15,7 +15,8 @@ body{
 }
 .card-wrapper{
   margin: auto;
-  width: 34rem;
+  width: 100%;
+  max-width: 34rem;
   padding: 8rem 0;
 }
 .upper-card{
@@ -70,7 +71,7 @@ body{
 }
 .graph-main-wrapper{
 
-  margin-top: 15%;
+  margin-top: 2%;
 
   .graph-bars{
     display: flex;
@@ -142,14 +143,31 @@ body{
 .percentage-title{
   font-size: 1.1rem;
   color:var(--medium-brown);
+  text-align: right;
 }
 .bar-hover{
   text-align: center;
   opacity: 0;
-  padding: 0.5rem;
+  padding: 10%;;
   font-weight: 700;
   color: white;
   border-radius: 5px;
-  width: 3rem;
+  width: auto;
   background-color: var(--dark-brown);
+}
+
+@media (max-width: 375px) {
+  html{
+    font-size: 12px;
+  }
+
+  .card-wrapper{
+    width: 92%;
+  }
+  .graph-main-wrapper .graph-bars .day {
+    width:10%;
+  }
+  .graph-main-wrapper .graph-bars .day .bar{
+    width: 2.75rem;
+  }
 }
